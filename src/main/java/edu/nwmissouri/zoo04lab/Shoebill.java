@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.nwmissouri.gayatri04lab;
+
+/**
+ *
+ * @author Gayatri Devabhaktuni
+ */
+public class Shoebill extends Animal {
+    public Shoebill(String name){
+        super(name);
+    }
+
+    @Override
+    public void speak() {
+        System.out.println("I'm a Shoebill \n---------------\nsound like a Machine Gun!");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("When I move, I fly and walk.");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("I Love eating Fish");
+    }
+
+}
