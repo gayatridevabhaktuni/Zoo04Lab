@@ -1,5 +1,5 @@
 
-import edu.nwmissouri.zoo04lab.Animal;
+package edu.nwmissouri.zoo04lab;
 
 
 /**

@@ -6,7 +6,7 @@
 package edu.nwmissouri.zoo04lab;
 
 /**
- *
+ *This is a class
  * @author Nikhil Porika
  */
 public class Dalmatian extends Animal {
