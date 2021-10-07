@@ -69,9 +69,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <excludes>
-                        <exclude>edu/nwmissouri/zoo04lab/Emu.java</exclude>   
+                    <excludes>     
                         <exclude>edu/nwmissouri/zoo04lab/GoatGroup.java</exclude>                         
+                        <exclude>edu/nwmissouri/zoo04lab/PandaGroup.java</exclude>                           
                     </excludes>
                 </configuration>
             </plugin>
@@ -83,9 +83,9 @@
                     <reportOutputDirectory>${basedir}</reportOutputDirectory>
                     <destDir>docs</destDir>
                     <sourcepath>${basedir}/src/main/java/</sourcepath>
-                    <sourceFileExcludes>              
-                        <exclude>edu/nwmissouri/zoo04lab/Emu.java</exclude>  
-                        <exclude>edu/nwmissouri/zoo04lab/GoatGroup.java</exclude>                          
+                    <sourceFileExcludes>     
+                        <exclude>edu/nwmissouri/zoo04lab/GoatGroup.java</exclude>                         
+                        <exclude>edu/nwmissouri/zoo04lab/PandaGroup.java</exclude>                          
                     </sourceFileExcludes>
                 </configuration>
             </plugin> 

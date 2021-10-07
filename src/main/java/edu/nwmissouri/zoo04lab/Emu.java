@@ -23,6 +23,6 @@ public class Emu extends Animal {
     @Override
     public void move() {
         System.out.println("they've become rare in the wild.");
-    }
-     
+    }    
+
 }
