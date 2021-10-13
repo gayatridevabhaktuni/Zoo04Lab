@@ -18,8 +18,8 @@ public class ZooApp {
     // Specify goodbye string
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our zoo!";
 
-    // specify number of  animal types available - TODO: NEED TO AUTOUPDATE****
-    private static final int NUMBER_ANIMAL_TYPES = 54;
+    // specify number of  animal types available 
+    private static final int NUMBER_ANIMAL_TYPES = 59;
 
     /**
      * This main() method is the entry point for our application.
@@ -65,52 +65,57 @@ public class ZooApp {
                 System.out.println("6. BengalTiger");
                 System.out.println("7. BlackJaguar");
                 System.out.println("8. BlackPanther");
-                System.out.println("9. Buffalo");
-                System.out.println("10. Cat");
-                System.out.println("11. Cheetah");
-                System.out.println("12. CongoLion");
-                System.out.println("13. Cow");
-                System.out.println("14. Crocodile");
-                System.out.println("15. Dalmatian");
-                System.out.println("16. Deer");
-                System.out.println("17. Dinosaur");
-                System.out.println("18. Duck");
-                System.out.println("19. ElephantBird");
-                System.out.println("20. Elephant");
-                System.out.println("21. Emu");
-                System.out.println("22. FerociousTiger");
-                System.out.println("23. Floppy");
-                System.out.println("24. Gerenuk");
-                System.out.println("25. Giraffe");
-                System.out.println("26. Glyptodon");
-                System.out.println("27. Goat");
-                System.out.println("28. Griffin");
-                System.out.println("29. HarpSeal");
-                System.out.println("30. Hippopotamus");
-                System.out.println("31. Kangaroo");
-                System.out.println("32. Kangaroov");
-                System.out.println("33. Koala");
-                System.out.println("34. Lioness");
-                System.out.println("35. Lion");
-                System.out.println("36. MightyLion");
-                System.out.println("37. MuleDeer");
-                System.out.println("38. Okapi");
-                System.out.println("39. Panda");
-                System.out.println("40. Panthera");
-                System.out.println("41. PolarBear");
-                System.out.println("42. Puma");
-                System.out.println("43. Rabbit");
-                System.out.println("44. RelayHorse");
-                System.out.println("45. RoaringLion");
-                System.out.println("46. Shoebill");
-                System.out.println("47. SiberianTiger");
-                System.out.println("48. Squirrel");
-                System.out.println("49. Stag");
-                System.out.println("50. StringRay");
-                System.out.println("51. SunBear");
-                System.out.println("52. Walrus");
-                System.out.println("53. Xraytetra");
-                System.out.println("54. YukonMoose");
+                System.out.println("9. Brachiosaurus");
+                System.out.println("10. Buffalo");
+                System.out.println("11. Cat");
+                System.out.println("12. Cheetah");
+                System.out.println("13. CongoLion");
+                System.out.println("14. Cow");
+                System.out.println("15. Crocodile");
+                System.out.println("16. Dalmatian");
+                System.out.println("17. Deer");
+                System.out.println("18. Dinosaur");
+                System.out.println("19. Duck");
+                System.out.println("20. ElephantBird");
+                System.out.println("21. Elephant");
+                System.out.println("22. Emu");
+                System.out.println("23. FerociousTiger");
+                System.out.println("24. Floppy");
+                System.out.println("25. Gerenuk");
+                System.out.println("26. Giraffe");
+                System.out.println("27. Glyptodon");
+                System.out.println("28. Goat");
+                System.out.println("29. Griffin");
+                System.out.println("30. HarpSeal");
+                System.out.println("31. Hippopotamus");
+                System.out.println("32. Kangaroo");
+                System.out.println("33. Kangaroov");
+                System.out.println("34. Koala");
+                System.out.println("35. Liger");
+                System.out.println("36. Lioness");
+                System.out.println("37. Lion");
+                System.out.println("38. MightyLion");
+                System.out.println("39. MuleDeer");
+                System.out.println("40. Okapi");
+                System.out.println("41. Panda");
+                System.out.println("42. Panthera");
+                System.out.println("43. PolarBear");
+                System.out.println("44. ProngHorn");
+                System.out.println("45. Puma");
+                System.out.println("46. Rabbit");
+                System.out.println("47. RelayHorse");
+                System.out.println("48. RoaringLion");
+                System.out.println("49. Shoebill");
+                System.out.println("50. SiberianTiger");
+                System.out.println("51. Squirrel");
+                System.out.println("52. Stag");
+                System.out.println("53. StringRay");
+                System.out.println("54. SunBear");
+                System.out.println("55. TauntingTiger");
+                System.out.println("56. Unicorn");
+                System.out.println("57. Walrus");
+                System.out.println("58. Xraytetra");
+                System.out.println("59. YukonMoose");
 
                 try {
                     typeNumberInput = scanner.nextInt();
@@ -148,183 +153,215 @@ public class ZooApp {
                         BengalTigerGroup.create();
                         BengalTigerGroup.run();
                     }
+                    case 7 -> {
+                        BlackJaguarGroup.create();
+                        BlackJaguarGroup.run();
+                    }
                     case 8 -> {
                         BlackPantherGroup.create();
                         BlackPantherGroup.run();
                     }
                     case 9 -> {
+                        BrachiosaurusGroup.create();
+                        BrachiosaurusGroup.run();
+                    }
+                    case 10 -> {
                         BuffaloGroup.create();
                         BuffaloGroup.run();
                     }
-                    case 10 -> {
+                    case 11 -> {
                         CatGroup.create();
                         CatGroup.run();
                     }
-                    case 11 -> {
+                    case 12 -> {
                         CheetahGroup.create();
                         CheetahGroup.run();
                     }
-                    case 12 -> {
+                    case 13 -> {
                         CongoLionGroup.create();
                         CongoLionGroup.run();
                     }
-                    case 13 -> {
+                    case 14 -> {
                         CowGroup.create();
                         CowGroup.run();
                     }
-                    case 14 -> {
+                    case 15 -> {
                         CrocodileGroup.create();
                         CrocodileGroup.run();
                     }
-                    case 15 -> {
+                    case 16 -> {
                         DalmatianGroup.create();
                         DalmatianGroup.run();
                     }
-                    case 16 -> {
+                    case 17 -> {
                         DeerGroup.create();
                         DeerGroup.run();
                     }
                     case 18 -> {
+                        DinosaurGroup.create();
+                        DinosaurGroup.run();
+                    }
+                    case 19 -> {
                         DuckGroup.create();
                         DuckGroup.run();
                     }
-                    case 19 -> {
+                    case 20 -> {
                         ElephantBirdGroup.create();
                         ElephantBirdGroup.run();
                     }
-                    case 20 -> {
+                    case 21 -> {
                         ElephantGroup.create();
                         ElephantGroup.run();
                     }
-                    case 21 -> {
+                    case 22 -> {
                         EmuGroup.create();
                         EmuGroup.run();
                     }
-                    case 22 -> {
+                    case 23 -> {
                         FerociousTigerGroup.create();
                         FerociousTigerGroup.run();
                     }
-                    case 23 -> {
+                    case 24 -> {
                         FloppyGroup.create();
                         FloppyGroup.run();
                     }
-                    case 24 -> {
+                    case 25 -> {
                         GerenukGroup.create();
                         GerenukGroup.run();
                     }
-                    case 25 -> {
+                    case 26 -> {
                         GiraffeGroup.create();
                         GiraffeGroup.run();
                     }
-                    case 26 -> {
+                    case 27 -> {
                         GlyptodonGroup.create();
                         GlyptodonGroup.run();
                     }
-                    case 27 -> {
+                    case 28 -> {
                         GoatGroup.create();
                         GoatGroup.run();
                     }
-                    case 28 -> {
+                    case 29 -> {
                         GriffinGroup.create();
                         GriffinGroup.run();
                     }
-                    case 29 -> {
+                    case 30 -> {
                         HarpSealGroup.create();
                         HarpSealGroup.run();
                     }
-                    case 30 -> {
+                    case 31 -> {
                         HippopotamusGroup.create();
                         HippopotamusGroup.run();
                     }
-                    case 31 -> {
+                    case 32 -> {
                         KangarooGroup.create();
                         KangarooGroup.run();
                     }
-                    case 32 -> {
+                    case 33 -> {
                         KangaroovGroup.create();
                         KangaroovGroup.run();
                     }
-                    case 33 -> {
+                    case 34 -> {
                         KoalaGroup.create();
                         KoalaGroup.run();
                     }
-                    case 34 -> {
+                    case 35 -> {
+                        LigerGroup.create();
+                        LigerGroup.run();
+                    }
+                    case 36 -> {
                         LionessGroup.create();
                         LionessGroup.run();
                     }
-                    case 35 -> {
+                    case 37 -> {
                         LionGroup.create();
                         LionGroup.run();
                     }
-                    case 36 -> {
+                    case 38 -> {
                         MightyLionGroup.create();
                         MightyLionGroup.run();
                     }
-                    case 37 -> {
+                    case 39 -> {
                         MuleDeerGroup.create();
                         MuleDeerGroup.run();
                     }
-                    case 38 -> {
+                    case 40 -> {
                         OkapiGroup.create();
                         OkapiGroup.run();
                     }
-                    case 39 -> {
+                    case 41 -> {
                         PandaGroup.create();
                         PandaGroup.run();
                     }
-                    case 40 -> {
+                    case 42 -> {
                         PantheraGroup.create();
                         PantheraGroup.run();
                     }
-                    case 41 -> {
+                    case 43 -> {
                         PolarBearGroup.create();
                         PolarBearGroup.run();
                     }
-                    case 42 -> {
+                    case 44 -> {
+                        ProngHornGroup.create();
+                        ProngHornGroup.run();
+                    }
+                    case 45 -> {
                         PumaGroup.create();
                         PumaGroup.run();
                     }
-                    case 43 -> {
+                    case 46 -> {
                         RabbitGroup.create();
                         RabbitGroup.run();
                     }
-                    case 44 -> {
+                    case 47 -> {
                         RelayHorseGroup.create();
                         RelayHorseGroup.run();
                     }
-                    case 45 -> {
+                    case 48 -> {
                         RoaringLionGroup.create();
                         RoaringLionGroup.run();
                     }
-                    case 46 -> {
+                    case 49 -> {
                         ShoebillGroup.create();
                         ShoebillGroup.run();
                     }
-                    case 48 -> {
+                    case 50 -> {
+                        SiberianTigerGroup.create();
+                        SiberianTigerGroup.run();
+                    }
+                    case 51 -> {
                         SquirrelGroup.create();
                         SquirrelGroup.run();
                     }
-                    case 49 -> {
+                    case 52 -> {
                         StagGroup.create();
                         StagGroup.run();
                     }
-                    case 50 -> {
+                    case 53 -> {
                         StringRayGroup.create();
                         StringRayGroup.run();
                     }
-                    case 51 -> {
+                    case 54 -> {
                         SunBearGroup.create();
                         SunBearGroup.run();
                     }
-                    case 52 -> {
+                    case 55 -> {
+                        TauntingTigerGroup.create();
+                        TauntingTigerGroup.run();
+                    }
+                    case 56 -> {
+                        UnicornGroup.create();
+                        UnicornGroup.run();
+                    }
+                    case 57 -> {
                         WalrusGroup.create();
                         WalrusGroup.run();
                     }
-                    case 53 -> {
+                    case 58 -> {
                         XraytetraGroup.create();
                         XraytetraGroup.run();
                     }
-                    case 54 -> {
+                    case 59 -> {
                         YukonMooseGroup.create();
                         YukonMooseGroup.run();
                     }

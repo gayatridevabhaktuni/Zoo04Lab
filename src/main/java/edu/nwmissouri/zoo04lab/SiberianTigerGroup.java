@@ -1,4 +1,6 @@
-package SiberianTigerGroup;
+package edu.nwmissouri.zoo04lab;
+
+import java.util.ArrayList;
 
 /**
  *
