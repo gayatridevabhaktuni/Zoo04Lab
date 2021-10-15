@@ -12,7 +12,6 @@ public class HarpSealGroup {
 
     /**
      * Create a static group of HarpSeal
-     *
      * @return the number of animals in the group
      */
     public static int create() {

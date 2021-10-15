@@ -47,8 +47,8 @@ public class FloppyTest {
      */
     @Test
     public void testSpeak() throws Exception {
-        String expected = "I'm Allie. I'm an Floppy!";
-        var aardvark = new Floppy("Allie");
+        String expected = "I'm an Floppy! I'm a pet of Satheesh.";
+        var aardvark = new Floppy("Satheesh");
         aardvark.speak();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
@@ -62,7 +62,7 @@ public class FloppyTest {
     @Test
     public void testMove() throws Exception {
         String expected = "When I move, I walk, walk, walk.";
-        var aardvark = new Floppy("Allie");
+        var aardvark = new Floppy("Satheesh");
          aardvark.move();
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);

@@ -53,6 +53,12 @@
             <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.5.5</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     
     <build>
@@ -69,8 +75,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <excludes>        
-                        <exclude>edu/nwmissouri/zoo04lab/FroGroup.java</exclude>                           
+                    <excludes>                                  
                     </excludes>
                 </configuration>
             </plugin>
@@ -83,7 +88,6 @@
                     <destDir>docs</destDir>
                     <sourcepath>${basedir}/src/main/java/</sourcepath>
                     <sourceFileExcludes>     
-                        <exclude>edu/nwmissouri/zoo04lab/FroGroup.java</exclude>                    
                     </sourceFileExcludes>
                 </configuration>
             </plugin> 

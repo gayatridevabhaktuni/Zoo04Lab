@@ -68,19 +68,28 @@ public class ZooBuildSwitch {
                 int fileNameLength = fileLength - lengthExtension;
                 var justName = file.substring(0, fileNameLength);
                 if (justName.endsWith("Group")) {
-
-                    // output this:
-                    //System.out.println("1. Aardvarks");
+                    // output something like this - but in columns
+                    //System.out.print("1. Aardvarks");
                     //System.out.println("2. Asps");
                     //System.out.println("3. Bearcats");
                     // write code below.....
-                   //System.out.println("case " + n++ + " -> {");
-                    System.out.println("System.out.println(\""+ n++ +". "+justName.replace("Group","")+"\");" );
+                    //System.out.println("case " + n++ + " -> {");
+                    var animal = justName.replace("Group", "");
+                    var numberAndAnimal = String.format("%2d.%-20s", n, animal);
+                    var quote = "\"";
+                    var sOpen = "System.out.print(";
+                    var sOpenLN = "System.out.println(";
+                    var sClose = ");";
+                    var strOut = sOpen + quote + numberAndAnimal + quote + sClose;
+                    var strOutLN = sOpenLN + quote + numberAndAnimal + quote + sClose;
+                    var statement = (n % 4 == 0) ? strOutLN : strOut;
+                    System.out.println(statement);
+                    n++;
                 }
             }
         }
         System.out.println("===============================");
-        System.out.println("Update NUMBER_ANIMAL_TYPES = "+ --n);
+        System.out.println("Update NUMBER_ANIMAL_TYPES = " + --n);
         System.out.println("===============================");
 
     }

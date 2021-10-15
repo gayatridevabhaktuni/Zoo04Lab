@@ -43,7 +43,19 @@ public class TauntingTiger extends Animal {
      */
      public void type() {
         System.out.println("I am a wild animal");
+        
+        
     }
+       public static void main(String[] args){
+           TauntingTiger tommy = new TauntingTiger("tommy");
+           for(int i =0;i<4;i++){
+           tommy.eat();
+           tommy.eat();
+           tommy.speak();
+           tommy.move();
+           tommy.type();
+           }
+       }
     
     
 }
