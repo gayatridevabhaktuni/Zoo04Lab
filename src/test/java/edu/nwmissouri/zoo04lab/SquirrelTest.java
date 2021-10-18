@@ -22,8 +22,6 @@ public class SquirrelTest {
     
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
     
-    public SquirrelTest() {
-    }
     
     @BeforeAll
     public static void setUpClass() {

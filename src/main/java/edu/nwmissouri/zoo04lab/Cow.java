@@ -56,7 +56,7 @@ public class Cow extends Animal{
         double morningMilkProdection = 2.3;
         double eveningMilkProduction = 1.5;
         double perDayMilkProduction = getCowAddition(morningMilkProdection, eveningMilkProduction);
-        System.out.println("I am " + this.name + ", I produce " + morningMilkProdection + "liters Of milk in the morning and "+eveningMilkProduction+"liters in the Evening, Overall I will produce "+perDayMilkProduction+"liters per day");
+        System.out.println("I am " + this.name + ", I produce " + morningMilkProdection + "liters Of milk in the morning and "+eveningMilkProduction+"liters in the Evening, Overall I will produce "+perDayMilkProduction+"\"liters per\" day");
     }
     
     public static void main(String[] args){
@@ -64,6 +64,7 @@ public class Cow extends Animal{
         cow.speak();
         cow.eat();
         cow.move();
+        cow.color();
         cow.studentCow();
     }
 }

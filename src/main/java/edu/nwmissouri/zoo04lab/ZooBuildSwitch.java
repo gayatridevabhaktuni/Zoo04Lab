@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Build our switch statement so we can see all the animals.
@@ -16,6 +18,35 @@ public class ZooBuildSwitch {
 
     private static final String relativePathToPackage = "/src/main/java/edu/nwmissouri/zoo04lab";
     private static final String nonAnimalsFileString = "SOURCE_NON_ANIMAL_FILES.txt";
+
+    public static Map<Integer, String> getAllAnimalMap() {
+
+        // find the files that should be excluded
+        ArrayList<String> ignoreList = getNonCustomAnimalFiles();
+
+        // process all found files, outputing custom animal code
+        File fileFolder = new File(getCustomAnimalPackagePathString());
+        String filesArray[] = fileFolder.list();
+
+        // create local variables for n and animalMap (a data structure)
+        int n = 1;
+        Map animalMap = new HashMap<Integer, String>();
+        
+        // process the list and load the map
+        for (String file : filesArray) {
+            if (!ignoreList.contains(file)) {
+                int fileLength = file.length();
+                int lengthExtension = ".java".length();
+                int fileNameLength = fileLength - lengthExtension;
+                var justName = file.substring(0, fileNameLength);
+                if (justName.endsWith("Group")) {
+                    var animal = justName.replace("Group", "");
+                   animalMap.put(n++, animal);
+                }
+            }
+        }
+        return animalMap;
+    }
 
     public static void main(String args[]) throws IOException {
 
@@ -114,5 +145,7 @@ public class ZooBuildSwitch {
         System.out.println(projectPathString);
         return projectPathString;
     }
+
+    
 
 }
