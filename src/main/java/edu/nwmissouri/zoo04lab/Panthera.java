@@ -35,7 +35,7 @@ public class Panthera extends Animal {
      */
     @Override
     public void speak() {
-        System.out.println("I am Panthera.");
+        System.out.println("I am Panthera");
     }
 
     /**
@@ -44,7 +44,7 @@ public class Panthera extends Animal {
      */
     @Override
     public void move() {
-        System.out.println("I can eat and walk.");
+        System.out.println("I can eat and walk");
     }
     /**
     * This method prints the logarithm value of a number

@@ -29,4 +29,35 @@ public class Duck extends Animal {
      public  void move() {
         System.out.println("I use feet to swim");
 } 
+     /**
+      * 
+      * Custom Duck function - your class must use a unique function name
+      * 
+      * @param monthlyEggsProduction
+      * @param monthsinYear
+      * @return int 
+      */
+     
+     
+     public int duckEggsProduction(int monthlyEggsProduction, int monthsinYear)
+     {
+         return monthlyEggsProduction*monthsinYear;
+     }
+     
+     public void studentDuck(){
+         int monthlyEggsProduction=3;
+         int monthsinYear =12;
+         int yearlyEggsProduction = duckEggsProduction(monthlyEggsProduction,monthsinYear);
+         System.out.println("Yearly Eggs Production of Duck is " + yearlyEggsProduction);
+     }
+     
+     public static void main(String[] args){
+         Duck d = new Duck("Sandhya");
+         d.speak();
+         d.move();
+         d.eat();
+         d.studentDuck();
+     }
 }
+     
+
