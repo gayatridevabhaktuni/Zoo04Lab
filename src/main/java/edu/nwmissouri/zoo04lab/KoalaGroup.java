@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Koala
  * @author Vinay Manavarthi
  */
 public class KoalaGroup {
@@ -30,14 +30,14 @@ public class KoalaGroup {
      * Run (simulate) the group doing things
      */
     public static void run() {
-        System.out.println("*****************************************");
+         System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         System.out.println("Hey - look at the Koala!");
         myGroup.forEach(Koala -> {
             Koala.speak();
             Koala.move();
         });
         System.out.println("Nice Koala - that was fun!");
-        System.out.println("*****************************************");
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
     }
     

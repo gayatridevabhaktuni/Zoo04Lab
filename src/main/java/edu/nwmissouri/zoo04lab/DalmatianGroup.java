@@ -3,6 +3,7 @@ package edu.nwmissouri.zoo04lab;
 import java.util.ArrayList;
 
 /**
+ * Provides methods to create and run a group of Dalmatian
  *
  * @author Nikhil Porika
  */
@@ -35,6 +36,8 @@ public class DalmatianGroup {
         myGroup.forEach(Dalmatian -> {
             Dalmatian.speak();
             Dalmatian.move();
+            Dalmatian.eat();
+            Dalmatian.cal();
         });
         System.out.println("Nice Dalmatian - that was fun!");
         System.out.println("*****************************************");

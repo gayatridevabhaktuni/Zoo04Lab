@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package edu.nwmissouri.zoo04lab;
 
@@ -16,26 +16,26 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Pavan Kumar Atmakuri
  */
 public class BearcatGroupTest {
-    
+
     public BearcatGroupTest() {
     }
-    
+
     @BeforeAll
     public static void setUpClass() {
     }
-    
+
     @AfterAll
     public static void tearDownClass() {
     }
-    
+
     @BeforeEach
     public void setUp() {
     }
-    
+
     @AfterEach
     public void tearDown() {
     }
-    
+
 
     /**
      * Test of create method, of class BearcatGroup.
@@ -56,5 +56,5 @@ public class BearcatGroupTest {
         BearcatGroup.run();
         assertTrue(true);
     }
-    
+
 }

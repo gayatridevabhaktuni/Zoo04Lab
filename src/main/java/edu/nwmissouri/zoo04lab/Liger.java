@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo04lab;
 
 /**
  *
- * @author RevanthPagilla
+ * @author Revanth Pagilla
  */
 public class Liger extends Animal {
     /**
@@ -21,14 +21,36 @@ public class Liger extends Animal {
 
     @Override
     public void move() {
-        System.out.println("I will climb trees ");
+        System.out.println("When I move, I walk, walk, walk.");
     }
 
     @Override
     public void speak() {
-         System.out.printf("I'm %s. I'm an Liger! \n", this.name);
+         System.out.printf("I roar loud. I'm an Liger! \n", this.name);
     }
     
     
+    public void eat() {
+         System.out.printf("I hunt very badly \n", this.name);
+    }
+     
+    /**
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getLigerAddition(double valueOne, int valueTwo) {
+        return valueOne + valueTwo;
+    }
+
+    public static void main(String[] args) {
+        var a = new Liger("Tester");
+        a.speak();
+        a.move();
+        a.eat();
+    }
+
 }
+
 
